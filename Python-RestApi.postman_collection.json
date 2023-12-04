@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "d11bbb4a-d6c8-463f-b28c-0dafe20ec62c",
+		"name": "Python-RestApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31484540"
+	},
+	"item": [
+		{
+			"name": "get_All_customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getAllCustomer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getAllCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_referenced_customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getCustomer?reference=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getCustomer"
+					],
+					"query": [
+						{
+							"key": "reference",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Title\": \"Mr\",\r\n\"Name\": \"Dave\",\r\n\"Address\": \"1st street Lincoln\",\r\n\"Phone\": \"1234579898\",\r\n\"Reference\": 4",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/saveCustomer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"saveCustomer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
