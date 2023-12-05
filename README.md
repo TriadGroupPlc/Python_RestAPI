@@ -6,5 +6,6 @@ taking a simple Customer form as input,I have 3 created endpoints for the basicR
 2. http://127.0.0.1:5000/getCustomer?reference=2
 3. http://127.0.0.1:5000/saveCustomer 
 
-To run the project execute the cmd -  "flask --app main run" in the terminal [you would need Python and Flask api installed]
+To run the project execute the cmd -  "flask --app main run" in the terminal [you would need Python and Flask api installed].
+
 I have also attached the Postman collection which can be used for testing the endpoints,"Python-RestApi.postman_collection"  
